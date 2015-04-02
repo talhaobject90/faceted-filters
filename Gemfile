@@ -47,9 +47,11 @@ end
 gem 'shopify_app'
 gem 'shopify_app'
 
-gem "less-rails-bootstrap"
-gem 'therubyracer'
+gem 'therubyracer'  # If using Ruby
+gem 'therubyrhino'  # If using JRuby
+gem 'jquery-rails'  # If using Bootstrap's JS plugins.
+gem 'less-rails-bootstrap'
 group :development, :test do
   
-  gem "therubyracer", platforms: :ruby
+ # gem "therubyracer", platforms: :ruby
 end
